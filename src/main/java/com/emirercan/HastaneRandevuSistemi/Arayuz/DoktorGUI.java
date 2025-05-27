@@ -16,7 +16,7 @@ public class DoktorGUI extends JFrame {
         JButton ekleBtn = new JButton("Yeni Doktor Ekle");
         JButton silBtn = new JButton("Doktor Sil");
         JButton listeBtn = new JButton("Doktorları Listele");
-        JButton geriBtn = new JButton("↩ Geri Dön");
+        JButton geriBtn = new JButton("Geri Dön");
         ekleBtn.addActionListener(e -> doktorEkleFormu());
         silBtn.addActionListener(e -> JOptionPane.showMessageDialog(this, "Silme henüz hazır değil."));
         listeBtn.addActionListener(e -> doktorlariListele());
