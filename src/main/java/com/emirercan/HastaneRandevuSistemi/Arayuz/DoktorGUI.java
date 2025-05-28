@@ -14,15 +14,12 @@ public class DoktorGUI extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridLayout(5, 1, 10, 10));
         JButton ekleBtn = new JButton("Yeni Doktor Ekle");
-        JButton silBtn = new JButton("Doktor Sil");
         JButton listeBtn = new JButton("Doktorları Listele");
         JButton geriBtn = new JButton("Geri Dön");
         ekleBtn.addActionListener(e -> doktorEkleFormu());
-        silBtn.addActionListener(e -> JOptionPane.showMessageDialog(this, "Silme henüz hazır değil."));
         listeBtn.addActionListener(e -> doktorlariListele());
         geriBtn.addActionListener(e -> dispose());
         add(ekleBtn);
-        add(silBtn);
         add(listeBtn);
         add(geriBtn);
         setVisible(true);
