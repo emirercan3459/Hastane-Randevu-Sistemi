@@ -31,7 +31,6 @@ public class Hasta {
         return tc;
     }
 
-    @Override
     public String toString() {
         return ad + " " + soyad;
     }
